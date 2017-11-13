@@ -1,3 +1,10 @@
-<p>
-  header works!
-</p>
+<header class="header-6">
+  <clr-icon shape="bars" class="menu-icon" (click)="showMenu()"></clr-icon>
+  <div class="menu"  [ngClass]="{show:showState}">
+    <a routerLink="/" routerLinkActive="active" href="/" class="menu-item">Home</a>
+    <a routerLink="/about" routerLinkActive="active" href="/about" class="menu-item">About</a>
+    <a routerLink="/products" routerLinkActive="active" href="/products" class="menu-item">Products</a>
+    <a routerLink="/pricing" routerLinkActive="active" href="/pricing" class="menu-item">Pricing</a>
+    <a routerLink="/map" routerLinkActive="active" href="/map" class="menu-item">Map</a>
+  </div>
+</header>
