@@ -1,0 +1,16 @@
+@import "../../../styles.scss";
+
+:host{
+  overflow: hidden;
+  display: block;
+  @include center();
+}
+
+.datagrid-cell {
+  white-space: nowrap;
+}
+
+.table-td__short{
+  max-width: 300px;
+  white-space: normal;
+}

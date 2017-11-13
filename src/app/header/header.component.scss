@@ -1,0 +1,49 @@
+@import "../../styles.scss";
+
+.menu-item {
+  padding: 0px 40px;
+  color: rgb(255, 255, 255);
+  text-decoration: none;
+}
+
+.menu {
+  justify-content: center;
+  align-items: center;
+  display: flex;
+  @include center();
+}
+
+.menu-icon {
+  display: none;
+  position: absolute;
+  right: 5%;
+  top: 20px;
+}
+
+@media (max-width: 768px) {
+  .menu {
+    display: none;
+    &.show {
+      display: block;
+      background: rgb(0, 37, 56);
+      height: auto;
+      position: absolute;
+      top: 60px;
+      text-align: center;
+      width: 100%;
+      z-index: 2;
+      border-top: 1px solid rgb(255, 255, 255);
+    }
+  }
+
+  .menu-item {
+    width: 100%;
+    display: block;
+  }
+
+  .menu-icon {
+    display: block;
+    cursor: pointer;
+  }
+
+}
